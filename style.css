@@ -116,6 +116,7 @@ ul {
     height: 300px;
     width: 250px;
     background-position: center;
+    object-fit: cover;
     
     
 }
@@ -148,9 +149,9 @@ ul {
 }
 /*Media*/
 @media (max-width: 768px) {
-ul {
+/*ul {
     flex-direction: column;
-}
+}*/
 .grid-wrapper {
     grid-template-columns: repeat(1, 1fr);
 }
@@ -160,7 +161,9 @@ ul {
     flex-direction: column;
 }
 ul li  a {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 }
